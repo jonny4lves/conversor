@@ -26,6 +26,11 @@ function App() {
             <Conversor moedaA = "BRL" moedaB = "CAD"></Conversor>
         </div>
 
+        <div className= "linha">
+            <Conversor moedaA = "GBP" moedaB = "BRL"></Conversor>
+            <Conversor moedaA = "BRL" moedaB = "GBP"></Conversor>
+        </div>
+
       
       </div>
       <div className="footer">
