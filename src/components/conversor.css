@@ -18,3 +18,8 @@ h2{
     text-align: center;
 }
 
+input{
+    border-radius: 5px;
+    appearance: none;
+    border: 1px solid #ced4da;
+}
