@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './conversor.css'
 
 
 export default class Conversor extends Component{
@@ -16,17 +17,17 @@ export default class Conversor extends Component{
     }
 
     converter(){
-        let de_para = `${this.props.moedaA}_${this.props.moedaA}`;
+        let de_para = `${this.props.moedaA}_${this.props.moedaB}`;
         let url = `https://free.currconv.com/api/v7/convert?q=${de_para}&compact=ultra&apiKey=38eda3ae73fbb909a959`;
         fetch(url)
         .then(res=>{
             return res.json()
-        })
-        .then(json=>{
-           let cotacao = json[de_para].val;
-           let moedaB_valor = (parseFloat(this.state.moedaA_valor * cotacao)).toFixed;
+        }).then(json=>{
+           let cotacao = json[de_para];
+           let moedaB_valor = (parseFloat(this.state.moedaA_valor)* cotacao).toFixed(2);
            this.setState({moedaB_valor})
         })
+        console.log(this.moedaB_valor);
     }
 
     render(){
