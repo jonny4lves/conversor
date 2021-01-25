@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="container">
       <div className="App">
-          <h1>Conversor de Moedas</h1>
+          <div className = "header">
+            <h1>Conversor de moedas</h1>
+          </div>
           <div className= "linha">
             <Conversor moedaA = "USD" moedaB = "BRL"></Conversor>
             <Conversor moedaA = "BRL" moedaB = "USD"></Conversor>
@@ -25,6 +27,9 @@ function App() {
         </div>
 
       
+      </div>
+      <div className="footer">
+        Desenvolvido por Jonathan Alves
       </div>
     </div>
   );

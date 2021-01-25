@@ -1,7 +1,8 @@
 .linha{
   display: flex;
-  margin-top: 40px;
+  margin-top: 60px;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 h1{
@@ -12,6 +13,26 @@ h1{
   margin: auto;
   max-width: 900px;
   
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:lightseagreen;
+  color: white;
+  text-align: center;
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color:lightseagreen;
+  color: white;
+  text-align: center;
 }
 
 *{
